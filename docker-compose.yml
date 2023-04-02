@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+  apacha:
+    image: php:apache
+    container_name: app
+    ports:
+      - '80:80'
+    volumes:
+      - /var/www/apacha/:/var/www/html/
+    restart: unless-stopped
+
