@@ -5,8 +5,6 @@ services:
     container_name: app
     ports:
       - '80:80'
-#    volumes:
-#      - /var/www/apacha/:/var/www/html/
     volumes:
       - ./:/var/www/html/
     restart: unless-stopped
